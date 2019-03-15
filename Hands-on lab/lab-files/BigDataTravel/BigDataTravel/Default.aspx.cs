@@ -200,6 +200,8 @@ namespace BigDataTravel
         {
             if (string.IsNullOrEmpty(mlUrl))
             {
+                this.prediction.ExpectDelays = true;
+                this.prediction.Confidence = 5;
                 return;
             }
 

@@ -67,6 +67,9 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-6">
+            <p>Place powerBi Visualization here!</p>
+        </div>
 
     </div>
 
