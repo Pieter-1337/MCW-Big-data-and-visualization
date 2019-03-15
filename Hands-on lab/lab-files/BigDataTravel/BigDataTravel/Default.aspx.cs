@@ -198,6 +198,8 @@ namespace BigDataTravel
 
         private async Task PredictDelays(DepartureQuery query, ForecastResult forecast)
         {
+            prediction = new DelayPrediction();
+
             if (string.IsNullOrEmpty(mlUrl))
             {
                 this.prediction.ExpectDelays = true;
@@ -206,8 +208,6 @@ namespace BigDataTravel
             }
 
             var departureDate = DateTime.Parse(txtDepartureDate.Text);
-
-            prediction = new DelayPrediction();
 
             try
             {
