@@ -26,9 +26,6 @@
     "mlUrl": {
       "type": "string"
     },
-    "mlApiKey": {
-      "type": "string"
-    },
     "weatherApiKey": {
       "type": "string"
     }
@@ -71,7 +68,7 @@
           ],
           "properties": {
             "mlUrl": "[parameters('mlUrl')]",
-            "weatherApiKey":  "[parameters('weatherApiKey')]"
+            "weatherApiKey": "[parameters('weatherApiKey')]"
           }
         },
         {
