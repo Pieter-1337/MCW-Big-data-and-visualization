@@ -42,12 +42,12 @@ namespace BigDataTravel
                 darkSky = new DarkSkyService(weatherApiKey);
 
                 ddlOriginAirportCode.DataSource = aiports;
-                ddlOriginAirportCode.DataTextField = "AirportCode";
+                ddlOriginAirportCode.DataTextField = "AirportName";
                 ddlOriginAirportCode.DataValueField = "AirportCode";
                 ddlOriginAirportCode.DataBind();
 
                 ddlDestAirportCode.DataSource = aiports;
-                ddlDestAirportCode.DataTextField = "AirportCode";
+                ddlDestAirportCode.DataTextField = "AirportName";
                 ddlDestAirportCode.DataValueField = "AirportCode";
                 ddlDestAirportCode.DataBind();
                 ddlDestAirportCode.SelectedIndex = 12;
@@ -64,24 +64,24 @@ namespace BigDataTravel
         {
             aiports = new List<Airport>()
             {
-                new Airport() { AirportCode ="SEA", Latitude = 47.44900, Longitude = -122.30899 },
-                new Airport() { AirportCode ="ABQ", Latitude = 35.04019, Longitude = -106.60900 },
-                new Airport() { AirportCode ="ANC", Latitude = 61.17440, Longitude = -149.99600 },
-                new Airport() { AirportCode ="ATL", Latitude = 33.63669, Longitude = -84.42810 },
-                new Airport() { AirportCode ="AUS", Latitude = 30.19449, Longitude = -97.66989 },
-                new Airport() { AirportCode ="CLE", Latitude = 41.41170, Longitude = -81.84980 },
-                new Airport() { AirportCode ="DTW", Latitude = 42.21239, Longitude = -83.35340 },
-                new Airport() { AirportCode ="JAX", Latitude = 30.49410, Longitude = -81.68789 },
-                new Airport() { AirportCode ="MEM", Latitude = 35.04240, Longitude = -89.97669 },
-                new Airport() { AirportCode ="MIA", Latitude = 25.79319, Longitude = -80.29060 },
-                new Airport() { AirportCode ="ORD", Latitude = 41.97859, Longitude = -87.90480 },
-                new Airport() { AirportCode ="PHX", Latitude = 33.43429, Longitude = -112.01200 },
-                new Airport() { AirportCode ="SAN", Latitude = 32.73360, Longitude = -117.19000 },
-                new Airport() { AirportCode ="SFO", Latitude = 37.61899, Longitude = -122.37500 },
-                new Airport() { AirportCode ="SJC", Latitude = 37.36259, Longitude = -121.92900 },
-                new Airport() { AirportCode ="SLC", Latitude = 40.78839, Longitude = -111.97799 },
-                new Airport() { AirportCode ="STL", Latitude = 38.74869, Longitude = -90.37000 },
-                new Airport() { AirportCode ="TPA", Latitude = 27.97550, Longitude = -82.53320 }
+                new Airport() { AirportName="Seattle", AirportCode ="SEA", Latitude = 47.44900, Longitude = -122.30899 },
+                new Airport() { AirportName="Albuquerque", AirportCode ="ABQ", Latitude = 35.04019, Longitude = -106.60900 },
+                new Airport() { AirportName="Anchorage", AirportCode ="ANC", Latitude = 61.17440, Longitude = -149.99600 },
+                new Airport() { AirportName="Atlanta", AirportCode ="ATL", Latitude = 33.63669, Longitude = -84.42810 },
+                new Airport() { AirportName="Austin", AirportCode ="AUS", Latitude = 30.19449, Longitude = -97.66989 },
+                new Airport() { AirportName="CLeveland", AirportCode ="CLE", Latitude = 41.41170, Longitude = -81.84980 },
+                new Airport() { AirportName="Detroit", AirportCode ="DTW", Latitude = 42.21239, Longitude = -83.35340 },
+                new Airport() { AirportName="Jacksonville", AirportCode ="JAX", Latitude = 30.49410, Longitude = -81.68789 },
+                new Airport() { AirportName="Memphis", AirportCode ="MEM", Latitude = 35.04240, Longitude = -89.97669 },
+                new Airport() { AirportName="Miami", AirportCode ="MIA", Latitude = 25.79319, Longitude = -80.29060 },
+                new Airport() { AirportName="Chicago", AirportCode ="ORD", Latitude = 41.97859, Longitude = -87.90480 },
+                new Airport() { AirportName="Phnoenix", AirportCode ="PHX", Latitude = 33.43429, Longitude = -112.01200 },
+                new Airport() { AirportName="San Diego", AirportCode ="SAN", Latitude = 32.73360, Longitude = -117.19000 },
+                new Airport() { AirportName="San Francisco", AirportCode ="SFO", Latitude = 37.61899, Longitude = -122.37500 },
+                new Airport() { AirportName="San Jose", AirportCode ="SJC", Latitude = 37.36259, Longitude = -121.92900 },
+                new Airport() { AirportName="Salt Lake City", AirportCode ="SLC", Latitude = 40.78839, Longitude = -111.97799 },
+                new Airport() { AirportName="St. Louis", AirportCode ="STL", Latitude = 38.74869, Longitude = -90.37000 },
+                new Airport() { AirportName="Tampa", AirportCode ="TPA", Latitude = 27.97550, Longitude = -82.53320 }
             };
         }
 
@@ -327,6 +327,7 @@ namespace BigDataTravel
     public class Airport
     {
         public string AirportCode { get; set; }
+        public string AirportName { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
     }

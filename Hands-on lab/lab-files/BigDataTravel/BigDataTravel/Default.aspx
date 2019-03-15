@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Margie's Travel App" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+﻿<%@ Page Title="LoQutus Travel App" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="BigDataTravel._Default" Async="true" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -66,8 +66,11 @@
                     </asp:Panel>
                 </div>
             </div>
+            <div class="col-md-12" id="tileContainer-small">
+                <p>Place powerBi Visualization here!</p>
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12" id="tileContainer-large">
             <p>Place powerBi Visualization here!</p>
         </div>
 

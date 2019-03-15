@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head runat="server">
-    <title>Margie's Travel</title>
+    <title>Loqutus Travel App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -125,7 +125,7 @@
     <div class="navbar navbar-default shadow-z-2">
         <div class="navbar-header">
             <a class="navbar-brand" href="javascript:void(0)" title="Margie's Travel">
-                <img src="images/MargiesTravel.png" style="max-width:376px; margin-top: -14px;" /></a>
+                <img src="images/loqutus-logo.jpg" style="max-width:250px; margin-top: -14px;" /></a>
         </div>
         <%--<div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -154,20 +154,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    Copyright &copy; <%= DateTime.Today.Year.ToString() %>,  |  <a href="#">Margie's Travel, inc.</a>, all rights reserved
+                    Copyright &copy; <%= DateTime.Today.Year.ToString() %>,  |  <a href="#">LoQutus N.V.</a>, all rights reserved
                 </div>
                 <div class="col-md-4">
-                    <a href="https://darksky.net/" target="_blank"><img src="images/darksky-sm.png" alt="DarkSky" /></a>
+                    <a href="https://loqutus.com" target="_blank"><img src="images/loqutus-logo-normal.svg" alt="Logo-normal" style="margin-top: -50px" /></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery-3.0.0.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/respond.min.js"></script>
     <script src="scripts/ripples.min.js"></script>
     <script src="scripts/material.min.js"></script>
+    <script src="scripts/powerbi.js"></script>
+    <script src="scripts/powerbi-USA.js"></script>
 
     <script>
         $(document).ready(function () {

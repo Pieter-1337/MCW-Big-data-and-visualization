@@ -71,7 +71,6 @@
           ],
           "properties": {
             "mlUrl": "[parameters('mlUrl')]",
-            "mlApiKey": "[parameters('mlApiKey')]",
             "weatherApiKey":  "[parameters('weatherApiKey')]"
           }
         },
